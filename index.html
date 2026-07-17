@@ -10,7 +10,11 @@
         <div class="nav">
             <h3>Soniya.</h3>
 
-            <ul>
+            <div class="menu-btn" onclick="toggleMenu()">
+                &#9776;
+            </div>
+
+            <ul id="navMenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
@@ -312,5 +316,24 @@
         <footer>
             &copy; 2026 Soniya Makhija. All rights reserved.
         </footer>
+        <script>
+const menuBtn = document.querySelector(".menu-btn");
+const navMenu = document.getElementById("navMenu");
+
+function toggleMenu() {
+    navMenu.classList.toggle("show");
+}
+
+document.addEventListener("click", function(e) {
+
+    if (
+        !navMenu.contains(e.target) &&
+        !menuBtn.contains(e.target)
+    ) {
+        navMenu.classList.remove("show");
+    }
+
+});
+</script>
     </body>
 </html>
