@@ -2031,6 +2031,10 @@ footer{
     footer{
         font-size:13px;
     }
+
+    .project{
+      width: 100%;
+    }
 }
 
 /* =========================
