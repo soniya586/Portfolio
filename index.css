@@ -2057,3 +2057,56 @@ input,
 textarea{
     font-family:'Poppins',sans-serif;
 }
+
+
+
+
+
+
+/* Contact Form Labels */
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    width:100%;
+}
+
+.input-group label{
+    font-size:15px;
+    font-weight:500;
+    color:#fff;
+}
+
+.personal-info{
+    display:flex;
+    gap:18px;
+}
+
+.personal-info .input-group{
+    flex:1;
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+
+
+
+
+
+
+
+
+.skills-heading span{
+    display: inline;
+}
+
+@media (max-width: 412px){
+    .skills-heading span{
+        display: block;
+    }
+}

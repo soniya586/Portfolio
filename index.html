@@ -137,7 +137,10 @@
 
         <div class="skills">
             <h4 class="title">MY SKILLS</h4>
-            <h1>Technologies I Work With</h1>
+
+<h1 class="skills-heading">
+    Technologies I <span>Work With</span>
+</h1>
             <div class="divs">
                 <div class="div1">
                     <img src="1.png" alt class="skills-img">
@@ -256,17 +259,52 @@
 
             <div class="right">
                 <form>
+
                     <div class="personal-info">
-                        <input type="text" name id placeholder="Your Name">
-                        <input type="text" name id placeholder="Your Email">
+
+                        <div class="input-group">
+                            <label for="name">Your Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email">Your Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email">
+                        </div>
+
                     </div>
 
-                    <input type="text" name id placeholder="Subject">
-                    <textarea name id placeholder="Your Message" rows="5"
-                        cols="8"></textarea>
-                    <button class="send-msg">Send Message</button>
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Enter subject">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Your Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Write your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="send-msg">Send Message</button>
+
                 </form>
             </div>
+
         </div>
 
         <hr>
